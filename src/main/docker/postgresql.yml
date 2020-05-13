@@ -1,0 +1,11 @@
+version: '2'
+services:
+  fcm-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/fcm/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=fcm
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
